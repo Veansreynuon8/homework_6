@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_secondary"
+        android:elevation="4dp"
+        app:menu="@menu/main_menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="City Lists"
+        app:titleTextColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/listCity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="AdapterViewChildren"/>
+</LinearLayout>
